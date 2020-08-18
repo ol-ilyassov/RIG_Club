@@ -1,0 +1,1032 @@
+
+/* - CSS for all Pages - */
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Slabo 27px', serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+fieldset {
+	border: none;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+/* - Header - */
+
+header {
+	display: flex;
+	justify-content: space-around;
+	background: orange;
+	width: 100%;
+}
+
+header img{
+	width: 120px;
+	height: auto;
+}
+
+header img {
+	animation-duration: 0.5s;
+    animation-name: movements;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+header img:hover {
+	animation-play-state: running;
+}
+
+/* Animation */
+@keyframes movements {
+	0% {
+        margin-left: 0vw;
+    }
+    25% {
+        margin-left: 0.5vw;
+    }
+    50% {
+        margin-left: 0vw;
+    }
+    75% {
+        margin-left: -0.5vw;
+    }
+    100% {
+        margin-left: 0vw;
+    }
+}
+
+/* - Footer - */
+
+footer {
+	background: #414146;
+	padding: 30px 0;
+	color: #fff;
+}
+
+.footer-container {
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 30% 35% 25%;
+	grid-column-gap: 3%;
+}
+
+.footer-container .contacts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.footer-container .contacts p {
+	font-family: 'Arial';
+}
+
+.footer-container .contacts h4 {
+	font-size: 18px;
+	margin-bottom: 9px;
+	color: #ffea00;
+	font-family: 'Arial';
+}
+
+.footer-container .rights {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial';
+}
+
+.footer-container .rights h4 {
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: #ffea00;
+	font-family: 'Arial';
+}
+
+.footer-container .address {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.footer-container .address p {
+    font-family: 'Arial';
+}
+
+.footer-container .address h4 {
+	font-size: 18px;
+	margin-bottom: 9px;
+	color: #ffea00;
+	font-family: 'Arial';
+}
+
+/* - Content - Home Page */
+
+/* The first Parallax effect */
+.block0_hp {
+	display: block;
+    background-image: url("../img/12.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#b0_bl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+}
+
+#b0_bl2 {
+	margin-top: -70vh;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#b0_bl2 h2{
+	background: #ffea08;
+	display: inline-block;
+	font-size: 55px;
+	padding: 0 13px;
+	margin-left: 5vw;
+	margin-right: auto;
+	margin-bottom: 4px;
+	font-weight: bolder;
+}
+
+#b0_bl2 h2:nth-child(1){
+	animation-duration: 1s;
+    animation-name: slidein;
+}
+
+#b0_bl2 h2:nth-child(2){
+	animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+#b0_bl2 h2:nth-child(3){
+	animation-duration: 2s;
+    animation-name: slidein;
+}
+
+/* Animation */
+@keyframes slidein{
+	from {
+		font-size: 40px;
+		display: inline-block;
+        margin-left: -100%;
+    }
+    to {
+    	font-size: 55px;
+    	display: inline-block;
+        margin-left: 5vw;
+    }
+}
+
+.block1_hp {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10vw;
+}
+
+.block1_hp p {
+	font-size: 30px;
+}
+
+.block2_hp {
+    background-image: url("../img/13.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block3_hp {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10vw;
+	font-size: 40px;
+}
+
+.block4_hp {
+    background-image: url("../img/a3.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* - Content - Common */
+
+#left-right {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 2% 10%;
+	font-size: 21px;
+}
+
+#left-right h2 {
+	display: inline-block;
+	margin-left: 15px;
+	padding: 2px;
+	border-bottom: 2px solid darkorange;
+}
+
+#left-right h2:hover {
+	padding: 2px;
+	background: darkorange;
+}
+
+#left-right h2,p,li,dd  {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.block0 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.block0 li {
+	margin-left: 15px;
+}
+
+.block0 ol,ul {
+	margin-bottom: 15px;
+}
+
+.block1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.block1 li {
+	margin-left: 15px;
+}
+
+.block1 ol,ul {
+	margin-bottom: 15px;
+}
+
+.block2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.block3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.block3 dd {
+	margin-left: 5px;
+}
+
+/* - Buttons for video - Common */
+#buttonbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#buttonbar button {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+	background: darkorange;
+	color: white;
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+
+}
+
+#buttonbar button:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* - Forms - Register */
+
+.form-register {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.form-register div {
+	margin: 10px 0 10px 0;
+}
+
+.form-register div input{
+	margin: 5px;
+	padding: 5px;
+	height: 30px;
+	font-size: 21px;
+}
+
+.form-register div select{
+	margin: 5px;
+	height: 30px;
+	font-size: 21px;
+}
+
+.form-register .buttons {
+	grid-column: 1/3;
+}
+
+.form-register .buttons input{
+	outline: none;
+	margin: 5px;
+	padding: 5px;
+	height: 40px;
+	font-size: 21px;
+	width: 120px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.form-register .buttons input:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* - Forms - Login */
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-login div {
+	margin: 10px 0 10px 0;
+}
+
+.form-login div input{
+	margin: 5px;
+	padding: 5px;
+	height: 30px;
+	font-size: 21px;
+}
+
+.form-login .buttons input{
+	outline: none;
+	margin: 5px;
+	padding: 5px;
+	height: 40px;
+	font-size: 21px;
+	width: 120px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.form-login .buttons input:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* - countDown - */
+
+.countDown li {
+  display: inline-block;
+  font-size: 30px;
+  list-style-type: none;
+  text-transform: uppercase;
+  border: 1px solid darkorange;
+  text-align: center;
+  padding: 5px;
+  background: darkorange;
+}
+
+.countDown li span {
+  display: block;
+  font-size: 30px;
+}
+
+/* - Calendar - */
+
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 5px;
+	margin-bottom: 10px;
+}
+
+.calendar div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid darkorange;
+    padding: 5px;
+    background: darkorange;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.calendar button {
+	background: #ffea08;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.calendar button:hover {
+	border:3px solid darkorange;
+	background: white;
+	color: darkorange;
+	cursor: pointer;
+	font-size: 21px;
+	border-radius: 5px;
+}
+
+#event {
+	border: 1px solid darkorange;
+	width: 100%;
+	text-align: center;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+
+/* - Articles - */
+
+.articles div {
+	border: 1px solid darkorange;
+	width: 100%;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+
+.articles button, h3, p {
+	margin: 12px;
+}
+
+#more1 {display: none;}
+
+#openArc1 {
+	background: darkorange;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#openArc1:hover {
+	border: 2px solid darkorange;
+	padding: 10px;
+	background: white;
+	color: darkorange;
+	cursor: pointer;
+	font-size: 21px;
+	border-radius: 5px;
+}
+
+#more2 {display: none;}
+
+#openArc2 {
+	background: darkorange;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#openArc2:hover {
+	border: 2px solid darkorange;
+	padding: 10px;
+	background: white;
+	color: darkorange;
+	cursor: pointer;
+	font-size: 21px;
+	border-radius: 5px;
+}
+
+#more3 {display: none;}
+
+#openArc3 {
+	background: darkorange;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 3px;
+	border-radius: 5px;
+}
+
+#openArc3:hover {
+	border: 2px solid darkorange;
+	padding: 10px;
+	background: white;
+	color: darkorange;
+	cursor: pointer;
+	font-size: 21px;
+	border-radius: 5px;
+}
+
+/* - Quiz - */
+
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	background: darkorange;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#submit:hover{
+	border: 2px solid darkorange;
+	padding: 10px;
+	background: white;
+	color: darkorange;
+	cursor: pointer;
+	font-size: 21px;
+}
+
+/* - Users Comments [] - */
+
+.message-container {
+   	margin: 10px;
+   	display: flex;
+   	flex-direction: column;
+}
+.comment-container img {
+   	margin: 5px;
+   	width: 50px;
+   	height: 60px;
+}
+.right-side1 {
+   	border: 3px solid darkorange;
+   	margin: 10px;
+   	display: flex;
+   	justify-content: flex-start;
+}
+.comment {
+	display: flex;
+	flex-direction: column;
+}
+.comment .commentName {
+	font-size: 24px;
+   	display: flex;
+   	color: darkorange;
+}
+.comment .commentMsg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.form-login #commentArea {
+	font-size: 21px;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+/* - Calculation [Category Rules] - */
+
+#calc1{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc1:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#calc2{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc2:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#calc3{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc3:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#calc4{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc4:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#calc5{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc5:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#calc6{
+	margin: 5px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+#calc6:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* - Teams Control Page - */
+
+#tcp {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+#tcpLeftHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	text-decoration: underline;
+	border-bottom: 1px solid black;
+}
+
+#tcpMiddleHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#tcpRightHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	text-decoration: underline;
+	border-bottom: 1px solid black;
+}
+
+#tcpLeftBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+#tcpMiddleBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#tcpRightBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+/* - Team Info - */
+
+#ti {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#ti div{
+	display: flex;
+	align-items: center;
+}
+
+#tiLeft {
+	justify-content: flex-end;
+	color: gray;
+}
+
+#tiRight {
+	justify-content: flex-start;
+}
+
+/* - Table Scores - */
+
+#ts {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+#ts div p {
+	margin: 0;
+	padding: 0;
+}
+
+#tsLeftHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+#tsRighterHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	flex-direction: column;
+}
+
+#tsLeftBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding: 10px 0 10px 0;
+}
+
+#tsRighterBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+/* - Table Scores Admin - */
+
+#tsa {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+#tsa div p {
+	margin: 0;
+	padding: 0;
+}
+
+#tsaLeftHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+#tsaRighterHead {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	flex-direction: column;
+}
+
+#tsaLeftBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding: 10px 0 10px 0;
+}
+
+#tsaRighterBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+/* - Additional - */
+
+.error {
+	color:red;
+}
+
+.success {
+	color:green;
+}
+
+.inputButton {
+	outline: none;
+	margin: 5px;
+	padding: 5px;
+	height: 40px;
+	font-size: 21px;
+	width: 120px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.inputButton:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.aButton {
+	display: inline-block;
+	text-decoration: none;
+	padding: -25px;
+	margin: 5px;
+}
+
+.alinkButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	padding: 5px;
+	height: 30px;
+	font-size: 21px;
+	width: 120px;
+	background: darkorange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.alinkButton:hover {
+	background: white;
+	border: 1px solid darkorange;
+	color: darkorange;
+	font-size: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+.generalInput {
+	margin: 5px;
+	padding: 5px;
+	height: 30px;
+	font-size: 21px;
+}

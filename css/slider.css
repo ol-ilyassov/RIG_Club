@@ -1,0 +1,194 @@
+
+/* - CSS for Slider & PhotoGallery(Filter) - */
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+* {
+  font-family: 'Slabo 27px', serif;
+}
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.mySlides img {
+  width:500px; height: 500px
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: darkorange;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 610px) {
+  .slideshow-container {
+  width: 250px;
+}
+
+.mySlides img {
+  width: 300px;
+  height: 300px;}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.photoGallery {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photoGallery h3 {
+  font-size: 35px;
+}
+
+.photoGallery p {
+  color: #424146;
+  font-size: 16px;
+}
+
+.photoGallery img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.toggles {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toggles button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 5px;
+  background: #424147;
+  color: #f5e10a;
+  border-radius: 5px;
+}
+
+.toggle-button {
+    font-weight: bold;
+    padding: 20px 10px 20px 10px;
+}
+
+.toggle-button:hover {
+    background: #ffea08;
+    transition: all 0.5s ease;
+    color: black;
+    border-radius: 5px;
+}
+
+.posts {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+}
+
+/* - Media (1250px) - */
+
+@media screen and (max-width: 1250px) {
+
+/* [About Us] */
+
+.photoGallery img {
+  width: 320px;
+  height: 220px;
+  margin-bottom: 10px;}
+}
+
+/* - Media (1000px) - */
+
+@media screen and (max-width: 1000px) {
+
+/* [About Us] */
+
+.posts {
+  grid-template-columns: auto;
+}
+
+}

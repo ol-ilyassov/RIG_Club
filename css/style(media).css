@@ -1,0 +1,85 @@
+
+/* - CSS for adaptive design (Different sized displays) - */
+
+/* - Media (840px) - */
+
+@media screen and (max-width: 840px) {
+
+/* Footer */
+
+.footer-container {
+    display:block;
+}
+
+.footer-container .rights {
+    margin-top: 20px;}
+}
+
+/* - Media (730px) - */
+
+@media screen and (max-width: 730px) {
+
+/* [Registration] */
+
+.form-register {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.form-register .buttons {
+	grid-column:1/2;
+	display: block;
+}
+
+}
+
+/* - Media (700px) - */
+
+@media screen and (max-width: 700px) {
+
+/* [News] */
+
+.countDown li {
+	font-size: 20px;
+}
+
+.countDown li span {
+	font-size: 20px;
+}
+
+.leaveComment textarea {
+	width: 90%;
+}
+
+}
+
+/* - Media (610px) - */
+
+@media screen and (max-width: 610px) {
+
+/* [Home Page] */
+
+#b0_bl2 h2 {
+	font-size: 40px;
+}
+
+.block1_hp p {
+	font-size: 22px;
+}
+
+.block3_hp p {
+	font-size: 30px;
+}
+
+@keyframes slidein{
+from {
+	font-size: 35px;
+	display: inline-block;
+    margin-left: -100%;
+} to {
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 5vw;}
+}
+
+}
